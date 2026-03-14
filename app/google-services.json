@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "258297034903",
+    "project_id": "facefitar-4bf96",
+    "storage_bucket": "facefitar-4bf96.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258297034903:android:eece1d781f4bb1378d11d2",
+        "android_client_info": {
+          "package_name": "com.example.facefitar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzyvBsW27vCEf1x3zStYhJLiahrROipCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

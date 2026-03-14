@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- Camera Permission -->
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+
+    <!-- Storage Permission (for old Android versions) -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <!-- Camera Hardware -->
+    <uses-feature android:name="android.hardware.camera.front" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.FaceFitAR"
+        tools:targetApi="31">
+
+        <!-- Splash Screen (Launcher Activity) -->
+        <activity
+            android:name="com.example.facefitar.ui.splash.SplashActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- Login Screen -->
+        <activity
+            android:name="com.example.facefitar.ui.auth.LoginActivity"
+            android:exported="false" />
+
+        <!-- Register Screen -->
+        <activity
+            android:name="com.example.facefitar.ui.auth.RegisterActivity"
+            android:exported="false" />
+
+        <!-- Camera Screen -->
+        <activity
+            android:name="com.example.facefitar.ui.camera.CameraActivity"
+            android:exported="false" />
+
+        <!-- Optional Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
